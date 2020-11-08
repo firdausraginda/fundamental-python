@@ -2,7 +2,7 @@
 # user_says = input("Please enter the string you want to print: ")
 # print(user_says)
 
-# -----------------------------
+# ----------------------------------------------------------
 
 # VARIABLES
 # 1. should start w/ a letter (can't start with a number)
@@ -23,7 +23,7 @@
 
 # python keyword that can't be variable: https://docs.python.org/3/reference/lexical_analysis.html#keywords
 
-# -----------------------------
+# ----------------------------------------------------------
 
 # DATA TYPE
 # strings, numbers, booleans, lists, sets, frozensets, tuples, ranges, dictionaries, None
