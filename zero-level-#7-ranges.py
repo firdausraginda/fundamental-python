@@ -1,3 +1,6 @@
+# DEFINITION
+# ranges will return the iterator
+
 # declare range
 # r = range(10)
 # print(r)
