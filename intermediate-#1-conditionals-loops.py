@@ -17,9 +17,10 @@
 
 # ----------------------------------------------------------
 
-# LOOPS
+# FOR LOOPS
+# for loops iterate through indexes
 
-# example loop
+# example for loop
 # vendors = ["Cisco", "HP", "Nortel", "Avaya", "Juniper"]
 
 # for each_vendor in vendors:
@@ -44,3 +45,17 @@
 
 # for idx, el in enumerate(vendors):
 #     print(idx, el)
+
+# ----------------------------------------------------------
+
+# WHILE LOOPS
+# while loops will continue looping until the value become false
+
+# example while loop
+x = 1
+
+while x <= 10:
+    print(x)
+    x = x + 1
+else:
+    print("x is now > 10")
