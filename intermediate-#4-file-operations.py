@@ -32,3 +32,15 @@ myfile = open("./routers.txt", "r")
 # for line in myfile.readlines():
 #     if line.startswith('a'):
 #         print(line)
+
+# ----------------------------------------------------------
+
+# HOW TO AVOID ERROR IN SPECIFYING PATH TO A FILE
+
+# python has a set of special characters also called escape sequences: '\n', '\t', '\U'
+
+# the solution is to use double backslash: f = open('C:\\Users\\todo\\Desktop\\new\\test.txt', 'r')
+# or can use r in front of the path: f = open(r'D:\Users\todo\file1.py', 'w')
+
+# ----------------------------------------------------------
+
