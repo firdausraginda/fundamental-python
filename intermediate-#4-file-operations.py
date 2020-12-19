@@ -7,7 +7,7 @@
 
 # ----------------------------------------------------------
 
-myfile = open("./routers.txt", "r")
+# myfile = open("./routers.txt", "r")
 # print(myfile.mode) # print out the mode
 
 # print(myfile.seek(0)) # setting the cursor to index 0
@@ -35,7 +35,7 @@ myfile = open("./routers.txt", "r")
 
 # ----------------------------------------------------------
 
-# HOW TO AVOID ERROR IN SPECIFYING PATH TO A FILE
+# HOW TO AVOID UNIQUECODE ERROR IN SPECIFYING PATH TO A FILE
 
 # python has a set of special characters also called escape sequences: '\n', '\t', '\U'
 
