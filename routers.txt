@@ -1,0 +1,7 @@
+cisco
+juniper
+HP
+avaya
+nortel
+arista
+linksys
