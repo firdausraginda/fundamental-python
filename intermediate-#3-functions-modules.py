@@ -117,3 +117,19 @@
 # using from import
 # from my_module import my_function
 # my_function()
+
+# ----------------------------------------------------------
+
+# DIR() & HELP()
+
+# import sys
+# print(help(sys)) # to see the description about the module
+# print(dir(sys)) # to see the substances of the module
+
+# ----------------------------------------------------------
+
+# INSTALLING NON-DEFAULT MODULE IN WINDOWS
+# pip: package management system used to install and manages software packages written in python
+# install module openpyxl: python -m pip install openpyxl
+
+# import openpyxl
