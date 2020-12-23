@@ -5,7 +5,7 @@
 # class inheritance: new class may inherit all the names & functionalities from an existing class
 # the class name use CamelCase
 
-# 'init' uses double underscores, this is the way python identifies a special method
+# 'init' method uses double underscores, this is the way python identifies a special method
 # self as parameter in 'init' function is a reference to the current instance of the class
 
 # define class (MyRouter)
