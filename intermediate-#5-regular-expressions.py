@@ -48,8 +48,8 @@
 # match start & end of the string
 # import re
 # mystr2 = 'I enjoy doing Python 3'
-# start = re.search(r'^I', mystr2)
-# end = re.search(r'3$', mystr2)
+# start = re.search(r'^[A-Z]\s\D{5}', mystr2)
+# end = re.search(r'[A-Z][a-z]{5}\s\d$', mystr2)
 # print(start.group())
 # print(end.group())
 
@@ -96,3 +96,18 @@
 # result = re.search(r'\s(\w{20})\s|([A-Z][a-z]{3})\s\d', a)
 # print(result.group(1)) # group 1 is empty because the rule is not match with any of char pattern in string
 # print(result.group(2))
+
+# ----------------------------------------------------------
+
+# SPLIT() & SUBN()
+# split: to split the string by the occurrences of certain pattern
+# subn: similar to sub() but also return the number of replacement being made
+
+# import re
+# a = 'I enjoy learning programming languages such as Java 3'
+# res = re.split(r' ', a) # split by whitespaces
+# print(res)
+# res2 = re.split(r'\s\w{2}\s',a) # split by char 'as'
+# print(res2)
+# res3 = re.subn(r'\s','-',a) # subn whitespaces to _
+# print(res3)
