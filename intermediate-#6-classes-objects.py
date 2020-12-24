@@ -48,3 +48,47 @@
 
 # check whether object is an instance of a class
 # print(isinstance(router2, MyRouter))
+
+# ----------------------------------------------------------
+
+# CLASS INHERITANCE
+
+# define main class
+# class MyRouter(object):
+#     "This is a class that describes the characteristics of a router."
+#     def __init__(self, routername, model, serialno, ios): # init here is to initialize some variables & the method is called whenever we create a new instance of a class in which it resides.
+#         self.routername = routername
+#         self.model = model
+#         self.serialno = serialno
+#         self.ios = ios
+    
+#     def print_router(self, manuf_date):
+#         print('The router name is: ', self.routername)
+#         print('The router model is: ', self.model)
+#         print('The serial number of: ', self.serialno)
+#         print('The IOS version is: ', self.ios)
+#         print('The model and date combined: ', self.model + ' ' + manuf_date)
+
+# define child class inherit from MyRouter
+# class MyNewRouter(MyRouter):
+#     def __init__(self, routername, model, serialno, ios, portsno):
+#         MyRouter.__init__(self, routername, model, serialno, ios)
+#         self.portsno = portsno
+    
+#     def print_new_router(self, string):
+#         print(string + ' ' + self.model)
+
+# child class can inherit from multiple parent class
+# class ChildClass(Parent1,Parent2,Parent3):
+    
+# check whether a class is a child class from a parent class
+# print(issubclass(MyNewRouter, MyRouter))
+
+# create inheritance/child class
+# new_router1 = MyNewRouter('new1', '1800', '111111', '12.2', '10')
+
+# print(new_router1.portsno)
+# print(new_router1.model)
+# print(new_router1.ios)
+# new_router1.print_router('print router')
+# new_router1.print_new_router('print new router')
