@@ -153,3 +153,44 @@
 # print(list(b))
 
 # ----------------------------------------------------------
+
+# DECORATORS
+# decorator is a function that takes another function as parameter and extend its functionality and behaviour without modifying it
+
+# def my_decorator(target_function):
+#     def function_wrapper():
+#         return "Python is such a " + target_function() + " language!"
+#     return function_wrapper
+
+# @my_decorator
+# def target():
+#     return "cool"
+# print(target())
+
+# this is equal to:
+# target = my_decorator(target)
+# print(target())
+
+# ----------------------------------------------------------
+
+# THREADING BASICS
+# threading can be used to run several function calls or other tasks concurrently especially if those tasks involve some waiting times
+# this is the case for networking applications and web related tasks among others
+
+# import threading
+# import time
+
+# def myfunction():
+#     print("Start a thread")
+#     time.sleep(3)
+#     print("End a thread")
+
+# threads = []
+
+# for i in range(5):
+#     th = threading.Thread(target = myfunction)
+#     th.start()
+#     threads.append(th)
+
+# for th in threads:
+#     th.join()
