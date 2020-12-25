@@ -115,7 +115,7 @@
 # ----------------------------------------------------------
 
 # ITERTOOLS: CHAIN(), COUNT(), CYCLE(), FILTERFALSE(), ISLICE()
-# chain(): combine multiple lists into 1 sequence
+# chain(): concatenate elements of 2 lists
 # count(): returns an iterator that generates consecutive integers until you stop it
 # cycle(): returns an iterator that simply repeats the value given as an argument infinitely
 # filterfalse(): returns the elements for which the function you provide as an argument returns false
@@ -180,17 +180,22 @@
 # import threading
 # import time
 
+# # Defining the main function
 # def myfunction():
+#     "Function to be executed"
 #     print("Start a thread")
 #     time.sleep(3)
 #     print("End a thread")
 
+# # Define an empty list of threads
 # threads = []
 
+# # Runs 5 concurrent sessions of myfunction()
 # for i in range(5):
 #     th = threading.Thread(target = myfunction)
-#     th.start()
+#     th.start() # starting the thread
 #     threads.append(th)
 
+# # Waiting for all threads to terminate
 # for th in threads:
 #     th.join()
