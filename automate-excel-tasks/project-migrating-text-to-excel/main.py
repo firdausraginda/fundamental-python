@@ -22,7 +22,10 @@ sheet.title = 'Employees'
 
 # migrating data to sheet
 for row in records:
-    sheet.append(row)
+    for i in range(len(row)):
+        if row[i].isdecimal():
+            row[i] = int(row[i]) # convert all decimal value to integer data type
+    sheet.append(row) # append data txt to sheet
 
 # setting up table style
 tableRange = Table(displayName='Table', ref='A1:G11') # cordinate A1:G11 based on 7 columns & 11 rows
